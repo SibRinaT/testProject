@@ -8,12 +8,13 @@
 import Foundation
 
 struct SemifinalDate: Codable {
-    let items: [Services]?
+    let items: [Service]?
     
-    struct Services: Codable {
-        let name: String?
-        let description: String?
-        let icon_url: String?
-        let service_url: String?
-    }
+}
+
+struct Service: Codable {
+    let name: String?
+    let description: String?
+    let icon_url: String?
+    let service_url: String?
 }
